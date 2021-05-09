@@ -28,7 +28,20 @@ docker-compose run --rm back bundle exec rails db:setup
 
 3. Run the app
 
+
 ```bash
+docker-compose up -d
+```
+
+
+* if you can't run front container, run the below command
+
+
+```bash
+cd front
+npm install
+
+cd ..
 docker-compose up -d
 ```
 
