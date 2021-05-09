@@ -1,0 +1,147 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: HRT APP
+definitions:
+  Reservation:
+    properties:
+      id:
+        type: integer
+        example: 10
+      name:
+        type: string
+        example: 伊藤鈴奈
+      in_room:
+        type: string
+        format: date-time
+        example: "2020-08-24T01:00:00.000Z"
+      out_room:
+        type: string
+        format: date-time
+        example: "2020-08-24T10:30:00.000Z"
+  ReservationBody:
+    properties:
+      name:
+        type: string
+        example: 伊藤鈴奈
+      in_room:
+        type: string
+        format: date-time
+        example: "2020-08-24T01:00:00.000Z"
+      out_room:
+        type: string
+        format: date-time
+        example: "2020-08-24T10:30:00.000Z"
+  ReservationsParTime:
+    properties:
+      start:
+        type: string
+        format: date-time
+        example: "2020-08-24T01:00:00.000Z"
+      number:
+        type: integer
+        example: 1
+  Success:
+    type: object
+    properties:
+      massage:
+        type: string
+        example: Success
+
+paths:
+  "/reservations":
+    get:
+      description: 入退室申請一覧
+      parameters:
+        - name: start
+          in: query
+          description: 開始日(YYYY-MM-DD)
+          required: true
+          type: string
+          format: date
+        - name: end
+          in: query
+          description: 終了日(YYYY-MM-DD)
+          required: true
+          type: string
+          format: date
+      responses:
+        "200":
+          description: 成功
+          schema:
+            type: object
+            properties:
+              reservations:
+                type: array
+                items:
+                  $ref: "#/definitions/Reservation"
+    post:
+      description: 入退室申請
+      parameters:
+        - name: body
+          in: body
+          type: object
+          properties:
+            reservation:
+              $ref: "#/definitions/ReservationBody"
+      responses:
+        "200":
+          description: 成功
+          schema:
+            $ref: "#/definitions/Success"
+    delete:
+      description: 入退室申請削除
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: integer
+      responses:
+        "200":
+          description: 成功
+          schema:
+            $ref: "#/definitions/Success"
+  "/reservations/calendar":
+    get:
+      description: 入退室申請人数一覧
+      parameters:
+        - name: start
+          in: query
+          description: 開始日(YYYY-MM-DD)
+          required: true
+          type: string
+          format: date
+        - name: end
+          in: query
+          description: 終了日(YYYY-MM-DD)
+          required: true
+          type: string
+          format: date
+      responses:
+        "200":
+          description: 成功
+          schema:
+            type: object
+            properties:
+              reservations:
+                type: array
+                items:
+                  $ref: "#/definitions/ReservationsParTime"
+  "/reservations/summary":
+    get:
+      description: excelファイルダウンロード
+      parameters:
+        - name: month
+          in: query
+          description: 開始日(YYYY-MM)
+          required: true
+          type: string
+          format: date
+      responses:
+        "200":
+          description: 成功
+          content:
+            application/vnd.openxmlformats-officedocument.spreadsheetml.sheet:
+              schema:
+                type: string
+                format: binary

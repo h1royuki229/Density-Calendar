@@ -1,0 +1,117 @@
+.PC {
+    width: auto;
+}
+
+.InputBox {
+    background-color: #FFF;
+    padding: 20px 20px 10px 20px;
+    width: 800px;
+    margin: 30px auto;
+}
+
+.input-element {
+    margin:5px;
+}
+
+.Header{
+    margin-top: 50px;
+    text-align: left;
+}
+
+.Footer {
+    /* border-top: 1px solid #ddd; */
+    /* background-color: #F4FCE8; */
+    margin: 0 -20px -10px -20px;
+    padding: 10px 20px;
+    width: 600px;
+}
+
+.table thead th{
+    padding: 3px;
+    vertical-align: middle;
+    border-top: 0px solid #dee2e6;
+    border-bottom: 0px solid #dee2e6;
+    /* border-right: 1px solid #dee2e6; */
+    /* border-left: 1px solid black; */
+}
+
+.btn {
+    padding: 6px 16px;
+}
+
+.btn-default {
+    color: #666666;
+    background-color: #ffffff;
+    border-color: #eeeeee;
+}
+
+.form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+element.style {
+    padding-top: 20px;
+    padding-bottom: 300px;
+}
+
+.labelsize{
+    margin: 10px;
+    text-align: center;
+}
+
+.inputsize{
+    margin: auto;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.boxsize{
+    margin: 30px;
+    width: 120px;
+}
+
+.button_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteline{
+    border-style: none!important;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    padding: 6px 0px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.42857;
+}
+
+.btn-color{
+    background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8;
+}
+
+.underline {
+    text-decoration: underline #e0e0e0;
+}
+.arrow {
+    font-size: 30px;
+    color: black;
+    font-weight: 100;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.monthboxsize{
+    width: 128px;
+}

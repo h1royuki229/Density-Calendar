@@ -1,0 +1,5 @@
+json = {
+    reservations: @calendar.map{|k, v| {"start": k, "number": v}}
+}
+
+json

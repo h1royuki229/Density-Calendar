@@ -1,0 +1,120 @@
+.SP {
+    width: auto;
+    overflow-x : hidden;
+}
+
+
+
+.InputBox_SP {
+    background-color: #FFF;
+    padding: 20px 20px 5px 20px;
+    width: auto;
+    margin: auto auto;
+}
+
+
+.Header{
+    margin-top: 50px;
+    text-align: left;
+}
+
+.Footer_SP {
+    /* border-top: 1px solid #ddd; */
+    /* background-color: #F4FCE8; */
+    margin-bottom: 50px;
+}
+
+.table thead th{
+    padding: 3px;
+    vertical-align: middle;
+    border-top: 0px solid #dee2e6;
+    border-bottom: 0px solid #dee2e6;
+    /* border-right: 1px solid #dee2e6; */
+    /* border-left: 1px solid black; */
+}
+
+.btn {
+    padding: 6px 16px;
+}
+
+.btn-default {
+    color: #666666;
+    background-color: #ffffff;
+    border-color: #eeeeee;
+}
+
+
+element.style {
+    padding-top: 20px;
+    padding-bottom: 300px;
+}
+
+.labelsize{
+    margin: 10px;
+    text-align: center;
+}
+
+
+.inputsize{
+    margin: auto;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+
+
+.inputform{
+    padding-right: 70px;
+}
+
+
+.row_SP{
+    display: block;
+    width: auto;
+}
+
+.button_wrapper_SP{
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.deleteline{
+    border-style: none!important;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    padding: 6px 0px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.42857;
+}
+
+.btn-color{
+    background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8;
+}
+
+.underline {
+    text-decoration: underline #e0e0e0;
+}
+.arrow {
+    font-size: 30px;
+    color: black;
+    font-weight: 100;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.monthboxsize{
+    width: 128px;
+}

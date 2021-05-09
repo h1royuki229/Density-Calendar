@@ -1,0 +1,57 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.5.2",
+    "date-fns": "^2.16.1",
+    "immutability-helper": "^3.1.1",
+    "jquery": "^3.5.1",
+    "list": "^2.0.19",
+    "peer": "^0.5.3",
+    "popper": "^1.0.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.5.2",
+    "react-calendar-heatmap": "^1.8.1",
+    "react-datepicker": "^3.2.2",
+    "react-dom": "^16.13.1",
+    "react-dropdown": "^1.9.0",
+    "react-modal": "^3.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-tooltip": "^4.2.18",
+    "react-widgets": "^5.0.0-beta.21",
+    "reactjs-calendar-heatmap": "^0.1.2",
+    "typescript": "^4.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "homepage": "https://hrt2020-app.github.io/front/"
+}
