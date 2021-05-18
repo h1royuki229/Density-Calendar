@@ -16,7 +16,7 @@ Visualizes "Customer Reservations" with "Density"
 1. Clone the repository
 
 ```bash
-git clone https://github.com/h1royuki229/Room-Management.git
+git clone git@github.com:h1royuki229/Density-Calendar.git
 ```
 
 2. Set up
